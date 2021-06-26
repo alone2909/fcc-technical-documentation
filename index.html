@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>TechnicalDocumentation</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>JS Function</header>
+      <a href="#Definition" class="nav-link">Definition</a>
+      <a href="#Parameter" class="nav-link">Parameter</a>
+      <a href="#Invocation" class="nav-link">Invocation</a>
+      <a href="#Call" class="nav-link">Call</a>
+      <a href="#Apply" class="nav-link">Apply</a>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Definition">
+        <header>Definition</header>
+        <p>JavaScript functions are defined with the function keyword. You can use a function declaration or a function expression.</p>
+        <p>JS functions:</p>
+        <ul>
+          <li>Definition</li>
+          <li>Parameter</li>
+          <li>Invocation</li>
+          <li>Call</li>
+          <li>Apply</li>
+        </ul>
+        <p>Example:</p>
+        <code>
+          <pre>
+function myFunction(a, b) {
+    return a * b;
+}
+        </pre
+          >
+        </code>
+      </section>
+      <section class="main-section" id="Parameter">
+        <header>Parameter</header>
+        <p>Earlier in this tutorial, you learned that functions can have parameters:</p>
+        <code>
+          <pre>
+function functionName(parameter1, parameter2, parameter3) {
+    // code to be executed
+}
+        </pre
+          >
+        </code>
+      </section>
+      <section class="main-section" id="Invocation">
+        <header>Invocation</header>
+        <p>The code inside a JavaScript function will execute when "something" invokes it.</p>
+        <p>Example:</p>
+        <code>
+          <pre>
+function myFunction(a, b) {
+    return a * b;
+}
+myFunction(10, 2);           // Will return 20
+        </pre
+          >
+        </code>
+      </section>
+      <section class="main-section" id="Call">
+        <header>Call</header>
+        <p>With the call() method, you can write a method that can be used on different objects.</p>
+        <p>Example:</p>
+        <code>
+          <pre>
+const myObject = {
+    firstName:"John",
+    lastName: "Doe",
+    fullName: function () {
+        return this.firstName + " " + this.lastName;
+        }
+    }
+              
+// This will return "John Doe":
+              myObject.fullName(); 
+        </pre
+          >
+        </code>
+      </section>
+      <section class="main-section" id="Apply">
+        <header>Apply</header>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus pariatur, magni dolorum repudiandae aliquam facilis at perspiciatis quos magnam eligendi, illum non quis unde tempore repellendus. Molestias debitis, nam fuga
+          natus nemo voluptate aliquam eveniet quis autem minus minima corporis ipsum beatae excepturi magnam quaerat rem est alias ullam consectetur voluptatem! Incidunt pariatur atque tenetur sint, eum sit quaerat delectus minus esse
+          eaque, eos suscipit!
+        </p>
+        <p>Example:</p>
+        <code>
+          <pre>
+            const person = {
+                fullName: function() {
+                  return this.firstName + " " + this.lastName;
+                }
+              }
+              
+              const person1 = {
+                firstName: "Mary",
+                lastName: "Doe"
+              }
+              
+              // This will return "Mary Doe":
+              person.fullName.apply(person1);
+        </pre
+          >
+        </code>
+      </section>
+    </main>
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
